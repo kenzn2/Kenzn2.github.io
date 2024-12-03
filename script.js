@@ -1,6 +1,6 @@
 const userID = "492259431103332353"; //put your discord user id here. // 738748102311280681
 const statusImage = document.getElementById("status-image");
-// const avatarImage = document.getElementById("avatar-image");
+const avatarImage = document.getElementById("avatar-image");
 
 async function fetchDiscordStatus() {
 	try {
