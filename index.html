@@ -6,10 +6,10 @@
 		<meta name="keywords" content="Kenzn2" />
 		<meta name="language" content="English" />
 		<meta name="author" content="Kenzn2" />
-		<link rel="icon" href="/public/ico_ekko.jpg" />
-		<link rel="stylesheet" href="/public/styles/style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="icon" href="public/ekko.jpg" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&display=swap"
 			rel="stylesheet" />
@@ -17,66 +17,83 @@
 			href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
 			rel="stylesheet"
 			crossorigin />
-		<title>Kenzn2</title>
+		<title>Kenzn2 bio</title>
 	</head>
-	<main>
-	</main>
-	<body>
+	<!-- <audio src="./music/abc.mp3" class="myAudio" autoplay="true" preload="auto"></audio> -->
+	<body oncontextmenu="return false;">
 		<div class="container">
-			<div class="profile-border">
-				<div class="profile">
-					<div id="banner" , oncontextmenu="return false;">
+			<div class="profile-border box-color">
+				<div class="profile box-color">
+					<div class="banner">
 						<img
-							src="public/true-damage-ekko.jpg"
+							loading="lazy"
+							id="banner-image"
+							src="./public/ekkoxjinx.jpg"
 							alt="" />
 					</div>
 					<div class="main-header">
 						<div class="image">
-							<button onclick="togglePlay()">
-								<div class="avatar" , oncontextmenu="return false;">
+							<div class="avatar">
+								<img
+									loading="lazy"
+									class="box-color"
+									id="avatar-image"
+									src="./public/ekko.jpg"
+									alt=""
+									aria-hidden="true"/>
+								<img
+									loading="lazy"
+									class="avatar-decoration"
+									alt="" />
+								<div class="status box-color">
 									<img
-										id="avatar-image"
-										alt=""
-										aria-hidden="true"
-										src="public/ekko.jpg" />
-									<div class="status">
-										<img
-											id="status-image"
-											src="public/status/online.svg"
-											alt="" />
-									</div>
+										id="status-image"
+										src="./public/status/offline.svg"
+										alt="" />
 								</div>
-							</button>
+							</div>
+							<!-- </button> -->
 						</div>
-						<div class="badges">
+						<div class="badges box-color" id="badges">
+							<div class="badges-right">
+								<a class="tooltip" aria-label="HypeSquad Bravery">
+									<img alt=" " src="./public/badges/hypesquad-bravery.svg"
+								/></a>
+								<a
+									class="tooltip"
+									id="active-developer"
+									aria-label="Active Developer">
+									<img alt=" " src="./public/badges/active-developer.svg"
+								/></a>
+							</div>
+							<div class="badges-left"></div>
 							<!-- badges list-->
-							<img
-								alt=" "
-								aria-hidden="true"
-								src="/public/badges/hypesquad_balance.svg" />
-							<img
-								alt=" "
-								aria-hidden="true"
-								src="/public/badges/active_developer.svg" />
+							<!-- -->
 						</div>
 					</div>
-					<div class="card">
-						<div class="header">
-							<div class="username">
-								<span class="text-username">Kenzn2</span>
+					<div class="card box-color">
+						<div class="name-box">
+							<span class="display-name">Kenzn2</span>
+							<span class="username"></span>
+							<span class="pronouns"></span>
+							<div class="custom-status">
+								<img id="custom-status-emoji" />
+								<p class="custom-status-text"></p>
 							</div>
 						</div>
-						<span class="text-base text-status">Kenzn2</span>
-						<div class="divider"></div>
+						<!-- spotify -->
+						<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4lriIG2vNqwDWzOj2I9rtj?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 						<div class="body">
 							<div class="content">
 								<div class="about-section">
 									<div class="title-body">ABOUT ME</div>
 									<!-- text -->
 									<span class="text-base"
-										>I'm Tuan Anh, a 21 year old Vietnamese student. You can call me by name Kenzn2 😇
-										<!-- xuống hàng -->
-										<br />I'm newbie developer, I'm learning about computer science and programming. But i like security information.
+										>I'm Tuan Anh, a 23 year old Vietnamese student. You can call me by name Kenzn2 😇
+										<br />I'm AI engineer,I have a chatbot (same GPT) so you can ask or chat on <a
+										href="https://discord.com/oauth2/authorize?client_id=1299070997433028718"
+										target="_blank"
+										>Discord</a>
 										<br />I play games( League of Legends, Valorant, PUBGMobie), listen to music( Vpop, US-UK), watch movies, and learn about technology.
 										<br />
 										<br />Join my server
@@ -84,7 +101,7 @@
 											href="https://discord.gg/YHr6cjhxKD"
 											target="_blank"
 											>Discord!</a>
-										<br />if you are an IUH student 
+										<br /> And if you are an IUH student 
 										<a
 											href="https://discord.gg/xjxfcBax9t"
 											target="_blank"
@@ -114,6 +131,7 @@
 									</div>
 									<!-- -->
 								</div>
+								
 								<div class="divider social-divider"></div>
 								<div class="socials">
 									<!-- social list -->
@@ -189,7 +207,11 @@
 				</div>
 			</div>
 		</div>
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-		<script src="script.js"></script>
+		<script src="./scripts/script_static.js"></script>
+		<!-- <script>
+			function enterPage() {
+				document.querySelector('.myAudio').play(); 
+			}
+			</script> -->
 	</body>
 </html>
