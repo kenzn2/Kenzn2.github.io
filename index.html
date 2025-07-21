@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Tuan Anh Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <div class="logo">
+                    </div>
+                    <span class="header__name">NGUYEN TUAN ANH</span>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link nav__link--active">
+                                <span class="nav__hash">#</span>home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about-me" class="nav__link">
+                                <span class="nav__hash">#</span>about-me
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#works" class="nav__link">
+                                <span class="nav__hash">#</span>works
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contacts" class="nav__link">
+                                <span class="nav__hash">#</span>contacts
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" type="button">
+                        <span class="mobile-menu-btn__line"></span>
+                        <span class="mobile-menu-btn__line"></span>
+                        <span class="mobile-menu-btn__line"></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            Tuan Anh - Kenzn2 <br>
+                            <span class="text-primary">AI/ML developer</span><br>
+                            Computer vision specialist
+                        </h1>
+                        <p class="hero__subtitle">
+                            Creates smart solutions using advanced machine learning and deep learning techniques.
+                        </p>
+                        <a href="#contacts" class="btn btn--primary hero__cta">Contact me!</a>
+                    </div>
+                    
+                    <div class="hero__image">
+                        <div class="hero__image-container">
+                            <img src="assets/images/profile/hero-image.png" alt="Nguyen Tuan Anh" class="hero__img">
+
+                            <div class="hero__status">
+                                <div class="status-indicator"></div>
+                                <span>Finding job</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero__quote">
+                    <blockquote class="quote">
+                        <p class="quote__text">"You will never fear AI taking your job if you know how to use it."</p>
+                        <footer class="quote__author">- Kenzn2</footer>
+                    </blockquote>
+                </div>
+            </div>
+            
+            <!-- Decorative dots -->
+            <div class="dots dots--hero-top"></div>
+            <div class="dots dots--hero-bottom"></div>
+            
+            <!-- Decorative shapes -->
+            <div class="decorative-shape shape--square shape--hero-top"></div>
+            <div class="decorative-shape shape--rectangle shape--hero-left"></div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-me" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-hash">#</span>about-me
+                    </h2>
+                </div>
+                
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__paragraph">
+                        Hello, I'm Tuan Anh (Kenzn2)!</p>
+                    <p class="about__paragraph">
+                    I am a Computer Science graduate from the Industrial University of Ho Chi Minh City, 
+                    with a strong focus on machine learning, deep learning, and computer vision.
+                    </p>
+                    <p class="about__paragraph">
+                    I am proficient in building intelligent applications using frameworks such as TensorFlow, Keras, 
+                    and developing computer vision solutions with YOLO, CNN, and other advanced deep learning models.
+                    </p>
+                    <p class="about__paragraph">
+                    Currently, I am exploring AI chatbot development and continuously enhancing my skills 
+                    in AI application development and emerging AI technologies.
+                    </p>
+                    </div>
+                    
+                    <div class="about__image">
+                        <img src="assets/images/profile/about-image.png" alt="About Tuan Anh">
+                        <div class="dots dots--about"></div>
+                    </div>
+                </div>
+                
+                <div class="about__facts">
+                    <div class="fact-item">
+                        <h3 class="fact-item__title">Education</h3>
+                        <div class="fact-item__timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-item__date">2020 - 2025</div>
+                                <div class="timeline-item__content">
+                                    <h4>Industrial University of Ho Chi Minh City</h4>
+                                    <p>Graduated in Computer Science</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fact-item">
+                        <h3 class="fact-item__title">Experience</h3>
+                        <div class="fact-item__timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-item__date">Dec 2024 - Now</div>
+                                <div class="timeline-item__content">
+                                    <h4>Freelance AI Developer</h4>
+                                    <p>Developing Discord bots with Gemini API integration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Decorative shapes -->
+            <div class="decorative-shape shape--overlapped shape--about-right"></div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="works" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-hash">#</span>projects
+                    </h2>
+                </div>
+                
+                <div class="projects__grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="assets/images/project/project-underwater.jpg" alt="Underwater Object Detection">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">YOLOv8</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">Computer Vision</span>
+                            </div>
+                            <h3 class="project-card__title">Underwater Object Detection</h3>
+                            <p class="project-card__description">
+                                AI system using YOLOv8 to detect marine life and underwater objects for oceanographic research and monitoring.
+                            </p>
+                            <div class="project-card__links">
+                                <a href="https://github.com/kenzn2/underwater-YoloV8" class="btn btn--secondary" target="_blank">GitHub ~></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="assets/images/project/project-fruits.jpg" alt="Fruit Classification">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">CNN</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">TensorFlow</span>
+                            </div>
+                            <h3 class="project-card__title">Fruit & Vegetable Classification</h3>
+                            <p class="project-card__description">
+                                Web application using CNN for classifying fruits and vegetables from user-uploaded images with high accuracy.
+                            </p>
+                            <div class="project-card__links">
+                                <a href="https://github.com/kenzn2/Fruit_and_vegetable_classification" class="btn btn--secondary" target="_blank">GitHub ~></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="assets/images/project/project-discord.jpg" alt="Discord AI Bot">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Discord.py</span>
+                                <span class="tech-tag">Gemini API</span>
+                                <span class="tech-tag">Cloud</span>
+                            </div>
+                            <h3 class="project-card__title">Discord AI Chatbot</h3>
+                            <p class="project-card__description">
+                                Intelligent Discord bot integrating Google Gemini API for natural language processing and tarot reading features.
+                            </p>
+                            <div class="project-card__links">
+                                <a href="https://top.gg/bot/1359729201640640603/invite" class="btn btn--secondary" target="_blank">Add to Discord ~></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            
+            <!-- Decorative elements -->
+            <div class="dots dots--projects-left"></div>
+            <div class="dots dots--projects-right"></div>
+            
+            <!-- Decorative shapes -->
+            <div class="decorative-shape shape--square-small shape--projects-top"></div>
+            <div class="decorative-shape shape--rectangle shape--projects-bottom"></div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <div class="container">
+                <div class="section-header section-header--skills">
+                    <h2 class="section-title">
+                        <span class="section-hash">#</span>skills
+                    </h2>
+                </div>
+                
+                <div class="skills__content">
+                    <div class="skills__info">
+                        <div class="skills__categories">
+                            <div class="skill-category">
+                                <h3 class="skill-category__title">Programming Languages</h3>
+                                <div class="skill-category__items">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">HTML/CSS</span>
+                                    <span class="skill-tag">SQL</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h3 class="skill-category__title">AI/ML & Computer Vision</h3>
+                                <div class="skill-category__items">
+                                    <span class="skill-tag">TensorFlow</span>
+                                    <span class="skill-tag">Keras</span>
+                                    <span class="skill-tag">scikit-learn</span>
+                                    <span class="skill-tag">OpenCV</span>
+                                    <span class="skill-tag">YOLO</span>
+                                    <span class="skill-tag">CNN</span>
+                                    <span class="skill-tag">Deep Learning</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h3 class="skill-category__title">Data Science</h3>
+                                <div class="skill-category__items">
+                                    <span class="skill-tag">pandas</span>
+                                    <span class="skill-tag">NumPy</span>
+                                    <span class="skill-tag">matplotlib</span>
+                                    <span class="skill-tag">Data Analysis</span>
+                                    <span class="skill-tag">Data Visualization</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h3 class="skill-category__title">Development Tools</h3>
+                                <div class="skill-category__items">
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">Flask</span>
+                                    <span class="skill-tag">Discord.py</span>
+                                    <span class="skill-tag">Google AI APIs</span>
+                                    <span class="skill-tag">Cloud Platforms</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Decorative dots -->
+            <div class="dots dots--skills"></div>
+            
+            <!-- Decorative shapes -->
+            <div class="decorative-shape shape--square shape--skills-left"></div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-hash">#</span>contacts
+                    </h2>
+                    <p class="section-subtitle">Let's work together!</p>
+                </div>
+                
+                <div class="contacts__content">
+                    <div class="contacts__info">
+                        <p class="contacts__description">
+                            I'm interested in AI/ML opportunities and freelance projects. 
+                            If you have any questions or want to collaborate, don't hesitate to contact me.
+                        </p>
+                        
+                        <div class="contact-card">
+                            <h3 class="contact-card__title">Message me here</h3>
+                            <div class="contact-methods">
+                                <a href="mailto:Antoan0105@gmail.com" class="contact-method">
+                                    <span class="contact-method__icon">✉</span>
+                                    <span class="contact-method__text">Antoan0105@gmail.com</span>
+                                </a>
+                                <a href="tel:+84948694043" class="contact-method">
+                                    <span class="contact-method__icon">📱</span>
+                                    <span class="contact-method__text">+84 948 694 043</span>
+                                </a>
+                                <div class="contact-method">
+                                    <span class="contact-method__icon">📍</span>
+                                    <span class="contact-method__text">Go Vap, Ho Chi Minh City</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-status" id="formStatus" style="display: none;">
+                            <p class="form-message" id="formMessage"></p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="name" name="from_name" class="form-input" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="from_email" class="form-input" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="title" name="subject" class="form-input" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary form-submit" id="submitBtn">Send</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Decorative dots -->
+            <div class="dots dots--contacts-left"></div>
+            <div class="dots dots--contacts-right"></div>
+            
+            <!-- Decorative shapes -->
+            <div class="decorative-shape shape--square-small shape--contacts-top"></div>
+        </section>
+
+        <!-- Support Section -->
+        <!-- <section class="support">
+            <div class="container">
+                <h2 class="support__title">Support me here</h2>
+                <div class="support__methods">
+                    <div class="support-card">
+                        <div class="support-card__icon">💳</div>
+                        <div class="support-card__info">
+                            <span class="support-card__label">Banking</span>
+                        </div>
+                    </div>
+                    <div class="support-card">
+                        <div class="support-card__icon">₿</div>
+                        <div class="support-card__info">
+                            <span class="support-card__label">Cryptocurrency</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <div class="footer__logo">
+                        <div class="logo">
+                        </div>
+                        <div class="footer__brand">
+                            <span class="footer__name">Nguyen Tuan Anh</span>
+                            <span class="footer__email">Antoan0105@gmail.com</span>
+                        </div>
+                    </div>
+                    <p class="footer__description">AI/ML developer and computer vision specialist</p>
+                </div>
+                
+                <div class="footer__media">
+                    <h3 class="footer__media-title">Social Network</h3>
+                    <div class="social-links">
+                        
+                        <a href="https://facebook.com/kenzn2" class="social-link" title="Facebook" target="_blank">
+                            <img src="assets/images/icon/facebook.svg" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/kenzn2/" class="social-link" title="LinkedIn" target="_blank">
+                            <img src="assets/images/icon/linkedin.svg" alt="LinkedIn" class="social-icon">
+                        </a>
+                        <a href="https://discord.gg/CWU7pYMDtR" class="social-link" title="Discord" target="_blank">
+                            <img src="assets/images/icon/discord.svg" alt="Discord" class="social-icon">
+                        </a>
+                        <a href="https://github.com/kenzn2" class="social-link" title="GitHub" target="_blank">
+                            <img src="assets/images/icon/github.svg" alt="GitHub" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Copyright 2025. Made by Kenzn2</p>
+            </div>
+        </div>
+        <div class="dots dots--contacts-right"></div>
+        
+        <!-- Decorative shapes -->
+        <div class="decorative-shape shape--rectangle shape--footer-left"></div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
