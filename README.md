@@ -3,6 +3,8 @@
 A modern, responsive portfolio website template designed specifically for AI/ML developers and computer vision specialists.
 
 🌐 **Live Demo:** [https://kenzn2.github.io](https://kenzn2.github.io)
+🧩 **Design Source:** This website was created based on a Figma design by Elias: [Portfolio Design on Figma](https://www.figma.com/design/GtCaFxaGH9K5kHseiL3OSk/Portfolio?m=auto&t=LyIhDJjq0P2zoEtI-6).  
+🛠️ It was built using the Figma MCP server tool and GitHub Copilot for coding assistance.
 
 ## ✨ Features
 
