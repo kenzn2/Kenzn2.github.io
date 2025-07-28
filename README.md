@@ -1,116 +1,213 @@
-<h1 align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Consolas&weight=900&size=50&pause=1000&color=00ff00&center=true&vCenter=true&width=435&lines=Hi!+I'm+Kenzn2" alt="Typing SVG" />
-  </a>
+# AI/ML Developer Portfolio Template
+
+A modern, responsive portfolio website template designed specifically for AI/ML developers and computer vision specialists.
+
+🌐 **Live Demo:** [https://kenzn2.github.io](https://kenzn2.github.io)
+
+🧩 **Design Source:** This website was created based on a Figma design by Elias: [Portfolio Design on Figma](https://www.figma.com/design/GtCaFxaGH9K5kHseiL3OSk/Portfolio?m=auto&t=LyIhDJjq0P2zoEtI-6).  
+🛠️ It was built using the Figma MCP server tool and GitHub Copilot for coding assistance.
+
+## ✨ Features
+
+- **Modern Design**: Clean, professional layout with developer-focused aesthetics
+- **Fully Responsive**: Perfect display on desktop, tablet, and mobile devices
+- **AI/ML Focused**: Sections tailored for showcasing AI/ML projects and skills
+- **Working Contact Form**: EmailJS integration for functional contact form
+- **Mobile Navigation**: Hamburger menu with smooth animations
+- **Project Showcase**: Dedicated section for AI/ML projects with tech stacks
+- **Skills Categories**: Organized display of programming languages, frameworks, and tools
+- **Social Links**: Footer with social media integration
+- **Fast Loading**: Optimized assets and clean code structure
+
+## 🚀 Quick Start
+
+### 1. Fork/Clone the Repository
+
+```bash
+git clone https://github.com/kenzn2/kenzn2.github.io.git
+cd kenzn2.github.io
+```
+
+### 2. Customize Your Information
+
+Edit `index.html` and update the following sections:
+
+#### Personal Information
+```html
+<!-- Update your name -->
+<span class="header__name">YOUR NAME</span>
+
+<!-- Update hero section -->
+<h1 class="hero__title">
+    Your Name <br>
+    <span class="text-primary">AI/ML developer</span><br>
+    Your Specialization
 </h1>
+```
 
-<hr>
+#### About Section
+Replace the content in `.about__paragraph` elements with your background, education, and experience.
 
-<p align="center">
-  <a href="https://github.com/kenzn2/kenzn2">
-    <img src="https://komarev.com/ghpvc/?username=kenzn2&style=flat&color=00ff00" alt="page views" />
-  </a>
-  <a href="https://kenzn2.github.io">
-    <img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fkenzn2.github.io&style=flat&logo=firefox&color=00ff00">
-  </a>
-  <a href="https://github.com/kenzn2?tab=repositories">
-    <img alt="Public Repos" src="https://img.shields.io/badge/repos-13%20public-00ff00?style=flat&logo=github">
-  </a>
-  <a href="https://github.com/kenzn2?tab=followers">
-    <img alt="GitHub followers" src="https://img.shields.io/github/followers/kenzn2?style=flat&logo=github&color=00ff00">
-  </a>
-  <a href="https://github.com/kenzn2?tab=repositories">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/kenzn2?style=flat&logo=github&color=00ff00">
-  </a>
-</p>
+#### Projects Section
+Update the project cards with your own projects:
+```html
+<article class="project-card">
+    <div class="project-card__image">
+        <img src="assets/images/project/your-project.jpg" alt="Your Project">
+    </div>
+    <div class="project-card__content">
+        <div class="project-card__tech">
+            <span class="tech-tag">Python</span>
+            <!-- Add your tech stack -->
+        </div>
+        <h3 class="project-card__title">Your Project Title</h3>
+        <p class="project-card__description">
+            Your project description
+        </p>
+        <div class="project-card__links">
+            <a href="your-github-link" class="btn btn--secondary" target="_blank">GitHub ~></a>
+        </div>
+    </div>
+</article>
+```
 
-<br>
-<p align="center">
-  Hi, I'm <strong>Kenzn2</strong>, Computer Science Graduate & AI Researcher from Vietnam
-  <br>
-  <br>
-  🎓 I have graduated with a degree in Computer Science, specialized in <strong>Artificial Intelligence</strong>
-  <br>
-  🔬 I research on <strong>Computer Vision</strong> and <strong>Image Processing</strong>
-  <br>
-  💻 I love coding and exploring cutting-edge AI technologies
-  <br>
-  📚 Currently self-learning advanced topics in Deep Learning and AI
-  <br>
-  🔍 Actively looking for opportunities in the AI/ML field
-  <br>
-  💬 Ask me anything about my repos <a href="https://github.com/kenzn2/kenzn2/issues" title="Issues">Here</a>
-  <br>
-  📫 How to reach me: Visit my <a href="https://kenzn2.github.io">Portfolio Website</a>
-</p>
+#### Skills Section
+Update the skill categories and tags to match your expertise.
 
-<hr>
+#### Contact Information
+```html
+<!-- Update contact details -->
+<a href="mailto:your-email@gmail.com" class="contact-method">
+    <span class="contact-method__icon">✉</span>
+    <span class="contact-method__text">your-email@gmail.com</span>
+</a>
+```
 
-<h2 align="center">🔥 Tech Stack & Tools 🔥</h2>
-<br>
-<p align="center">
-  <code><img title="Python" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"></code>
-  <code><img title="PyTorch" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg"></code>
-  <code><img title="TensorFlow" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg"></code>
-  <code><img title="OpenCV" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg"></code>
-  <code><img title="JavaScript" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"></code>
-  <code><img title="Flask" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg"></code>
-  <code><img title="Jupyter" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original.svg"></code>
-  <code><img title="Git" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"></code>
-  <code><img title="CSS3" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"></code>
-  <code><img title="HTML5" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"></code>
-  <code><img title="NumPy" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg"></code>
-  <code><img title="Pandas" height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg"></code>
-</p>
-<hr>
+### 3. Replace Images
 
-<h2 align="center">⚡ GitHub Statistics ⚡</h2>
-<br>
-<p align=center>
-  <div align=center>
-    <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="Go to Source">
-      <img align="left" width=390 src="https://streak-stats.demolab.com/?user=kenzn2&theme=dark&border=00ff00&hide_border=true&background=0D1117&stroke=00ff00&ring=00ff00&fire=00ff00&currStreakLabel=00ff00" alt="kenzn2" />
-    </a>
-    <a href="https://github.com/anuraghazra/github-readme-stats" title="Go to Source">
-      <img align="right" width=390 src="https://github-readme-stats.vercel.app/api?username=kenzn2&show_icons=true&theme=dark&border_color=00ff00&hide_border=true&bg_color=0D1117&title_color=00ff00&icon_color=00ff00&text_color=ffffff" />
-    </a>
-  </div>
-  <br><br><br><br><br><br><br><br><br>
-  <div align=center>
-    <a href="https://github.com/anuraghazra/github-readme-stats">
-      <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kenzn2&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=00ff00&text_color=ffffff&icon_color=00ff00&bg_color=0D1117&langs_count=8&layout=compact&border_color=00ff00&hide_border=true&size_weight=0.5&count_weight=0.5" />
-    </a>
-  </div>
-  <br>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kenzn2&theme=github-compact&bg_color=0D1117&color=00ff00&line=00ff00&point=ffffff&area=true&hide_border=true" width="100%"/>
-</p>
+Replace the following images with your own:
+- `assets/images/profile/hero-image.png` - Your profile photo
+- `assets/images/profile/about-image.png` - Your about section photo
+- `assets/images/project/` - Your project screenshots
 
-<hr>
+### 4. Setup EmailJS (Optional)
 
-<h2 align="center">👨‍💻 Featured Repositories 👨‍💻</h2>
-<br>
-<div width="100%" align="center">
-  <a align="left" href="https://github.com/kenzn2/underwater-YoloV8" title="Underwater YOLOv8"><img align="left" height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=kenzn2&repo=underwater-YoloV8&theme=dark&border_color=00ff00&border_radius=10&bg_color=0D1117&title_color=00ff00&text_color=ffffff&icon_color=00ff00"></a>
-  <a align="right" href="https://github.com/kenzn2/Face_Recognition" title="Face Recognition System"><img align="right" height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=kenzn2&repo=Face_Recognition&theme=dark&border_color=00ff00&border_radius=10&bg_color=0D1117&title_color=00ff00&text_color=ffffff&icon_color=00ff00"></a>
-</div>
-<br/><br/><br/><br/><br/><br/>
-<div width="100%" align="center">
-  <a align="left" href="https://github.com/kenzn2/Duolingo-Lazy" title="Duolingo Lazy Extension"><img align="left" height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=kenzn2&repo=Duolingo-Lazy&theme=dark&border_color=00ff00&border_radius=10&bg_color=0D1117&title_color=00ff00&text_color=ffffff&icon_color=00ff00"></a>
-  <a align="right" href="https://github.com/kenzn2/Kenzn2.github.io" title="Personal Portfolio Website"><img align="right" height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=kenzn2&repo=Kenzn2.github.io&theme=dark&border_color=00ff00&border_radius=10&bg_color=0D1117&title_color=00ff00&text_color=ffffff&icon_color=00ff00"></a>
-</div>
-<br/><br/><br/><br/><br/><br/>
-<div width="100%" align="center">
-  <a align="left" href="https://github.com/kenzn2/Fruit_and_vegetable_classification" title="Fruit & Vegetable Classification"><img align="left" height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=kenzn2&repo=Fruit_and_vegetable_classification&theme=dark&border_color=00ff00&border_radius=10&bg_color=0D1117&title_color=00ff00&text_color=ffffff&icon_color=00ff00"></a>
-  <a align="right" href="https://github.com/kenzn2/GAN_anime" title="GAN Anime Generator"><img align="right" height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=kenzn2&repo=GAN_anime&theme=dark&border_color=00ff00&border_radius=10&bg_color=0D1117&title_color=00ff00&text_color=ffffff&icon_color=00ff00"></a>
-</div>
-<br/><br/><br/><br/><br/><br/>
+To enable the contact form:
 
-<h4 align="center">
-  <a href="https://github.com/kenzn2?tab=repositories" title="Show Repositories">🔎 Show More 🔍</a>
-</h4>
+1. Create account at [EmailJS](https://www.emailjs.com/)
+2. Create email service and template
+3. Update the configuration in `scripts/main.js`:
 
-[Underwater YOLOv8]: https://github.com/kenzn2/underwater-YoloV8
-[Face Recognition]: https://github.com/kenzn2/Face_Recognition  
-[Duolingo Lazy]: https://github.com/kenzn2/Duolingo-Lazy
-[GitHub]: https://github.com/kenzn2
-[Website]: https://kenzn2.github.io
+```javascript
+setupEmailJS() {
+    emailjs.init("YOUR_USER_ID");
+}
+
+setupContactForm() {
+    // Update service and template IDs
+    const result = await emailjs.sendForm(
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
+        form
+    );
+}
+```
+
+### 5. Deploy
+
+#### GitHub Pages (Recommended)
+1. Rename repository to `your-username.github.io`
+2. Push your changes
+3. Enable GitHub Pages in repository settings
+4. Your site will be available at `https://your-username.github.io`
+
+#### Other Platforms
+- **Netlify**: Connect your GitHub repo for automatic deployments
+- **Vercel**: Import your GitHub repository
+- **Traditional Hosting**: Upload all files to your web hosting
+
+## 🛠️ Customization
+
+### Color Scheme
+The color palette is defined in CSS custom properties at the top of `styles/main.css`:
+
+```css
+:root {
+    --color-primary: #C778DD;
+    --color-bg-primary: #282C33;
+    --color-bg-secondary: #1E2328;
+    /* Modify these to match your brand */
+}
+```
+
+### Typography
+The template uses Fira Code font. To change:
+
+```html
+<!-- In index.html head section -->
+<link href="https://fonts.googleapis.com/css2?family=Your-Font:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+```
+
+```css
+/* In styles/main.css */
+:root {
+    --font-family: 'Your-Font', monospace;
+}
+```
+
+### Layout
+The responsive design uses CSS Grid and Flexbox. Breakpoints are defined at:
+- Mobile: `< 768px`
+- Tablet: `768px - 1024px`
+- Desktop: `> 1024px`
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── assets/
+│   └── images/
+│       ├── icon/          # Social media icons
+│       ├── profile/       # Profile photos
+│       └── project/       # Project screenshots
+├── scripts/
+│   └── main.js           # JavaScript functionality
+├── styles/
+│   └── main.css          # All styling
+├── index.html            # Main HTML file
+└── README.md             # This file
+```
+
+## 🎯 Perfect For
+
+- AI/ML Engineers
+- Data Scientists
+- Computer Vision Specialists
+- Deep Learning Researchers
+- Python Developers
+- Recent Graduates in AI/CS
+- Freelance AI Developers
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers
+
+## 📄 License
+
+This project is open source. Feel free to use it for your own portfolio with attribution.
+
+## 🤝 Contributing
+
+Found a bug or want to contribute? Please open an issue or submit a pull request.
+
+## 💡 Credits
+
+Designed and developed by [Kenzn2](https://github.com/kenzn2)
+
+---
+
+⭐ If this template helps you land your dream AI/ML job, please give it a star!
