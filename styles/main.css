@@ -172,8 +172,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Logo */
 .logo {
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .logo__grid {
@@ -445,6 +455,16 @@ h1, h2, h3, h4, h5, h6 {
 .project-card__links {
     display: flex;
     gap: var(--spacing-sm);
+}
+
+.projects__view-all {
+    margin-top: var(--spacing-2xl);
+    text-align: center;
+}
+
+.projects__view-all .btn {
+    font-size: var(--font-size-base);
+    padding: var(--spacing-md) var(--spacing-xl);
 }
 
 /* Skills Section */
