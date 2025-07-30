@@ -14,28 +14,37 @@ class Portfolio {
 
     setupMobileMenu() {
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const nav = document.querySelector('.nav');
+        const navList = document.querySelector('.nav__list');
         
-        if (mobileMenuBtn && nav) {
+        if (mobileMenuBtn && navList) {
             mobileMenuBtn.addEventListener('click', () => {
-                nav.classList.toggle('nav--open');
-                mobileMenuBtn.classList.toggle('mobile-menu-btn--active');
+                navList.classList.toggle('active');
+                mobileMenuBtn.classList.toggle('active');
             });
 
             // Close mobile menu when clicking on nav links
             const navLinks = document.querySelectorAll('.nav__link');
             navLinks.forEach(link => {
                 link.addEventListener('click', () => {
-                    nav.classList.remove('nav--open');
-                    mobileMenuBtn.classList.remove('mobile-menu-btn--active');
+                    navList.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
+                });
+            });
+
+            // Close mobile menu when clicking on social links
+            const socialLinks = document.querySelectorAll('.nav__social-link');
+            socialLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navList.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
                 });
             });
 
             // Close mobile menu when clicking outside
             document.addEventListener('click', (e) => {
-                if (!nav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-                    nav.classList.remove('nav--open');
-                    mobileMenuBtn.classList.remove('mobile-menu-btn--active');
+                if (!navList.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                    navList.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
                 }
             });
         }

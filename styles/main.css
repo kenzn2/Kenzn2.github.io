@@ -204,6 +204,11 @@ h1, h2, h3, h4, h5, h6 {
     gap: var(--spacing-xl);
 }
 
+/* Hide social network in desktop */
+.nav__social {
+    display: none;
+}
+
 .nav__link {
     text-decoration: none;
     color: var(--color-gray);
@@ -1129,41 +1134,137 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .nav__list {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
+        /* Reset desktop styles */
+        position: fixed;
+        top: 80px;
+        right: var(--spacing-lg);
         background-color: var(--color-bg-primary);
-        border: 1px solid var(--color-gray);
-        border-top: none;
-        border-radius: 0 0 var(--border-radius) var(--border-radius);
+        border: 2px solid var(--color-primary);
+        border-radius: var(--border-radius);
         flex-direction: column;
         align-items: stretch;
         gap: 0;
         z-index: 1001;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-        min-width: 200px;
+        box-shadow: 0 0 20px rgba(199, 120, 221, 0.3);
+        min-width: 220px;
+        max-width: 260px;
+        padding: var(--spacing-lg);
+        overflow: visible;
+        
+        /* Auto height based on content */
+        height: auto;
+        width: auto;
+        
+        /* Hide by default */
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity var(--transition-normal), transform var(--transition-normal), visibility var(--transition-normal);
     }
     
     .nav__list.active {
-        display: flex !important;
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    /* Mobile menu backdrop */
+    .nav__list::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: -1;
+        opacity: 0;
+        transition: opacity var(--transition-normal);
+        pointer-events: none;
+    }
+    
+    .nav__list.active::before {
+        opacity: 1;
+        pointer-events: auto;
     }
     
     .nav__link {
-        font-size: var(--font-size-base);
-        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: var(--font-size-md);
+        padding: var(--spacing-sm) 0;
         text-align: left;
         border-bottom: 1px solid rgba(171, 178, 191, 0.1);
         transition: background-color var(--transition-fast);
+        color: var(--color-white);
     }
     
     .nav__link:hover {
         background-color: rgba(199, 120, 221, 0.1);
+        color: var(--color-primary);
     }
     
     .nav__item:last-child .nav__link {
         border-bottom: none;
+        margin-bottom: 0;
+    }
+    
+    /* Mobile Social Links in Menu */
+    .nav__social {
+        display: block;
+        margin-top: var(--spacing-lg);
+        padding-top: var(--spacing-lg);
+        border-top: 1px solid rgba(171, 178, 191, 0.1);
+    }
+    
+    .nav__social-title {
+        color: var(--color-primary);
+        font-size: var(--font-size-md);
+        margin-bottom: var(--spacing-sm);
+        font-weight: 600;
+    }
+    
+    .nav__social-links {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-sm);
+        justify-content: center;
+    }
+    
+    .nav__social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-xs);
+        color: var(--color-gray);
+        text-decoration: none;
+        padding: var(--spacing-sm);
+        border-radius: calc(var(--border-radius) / 2);
+        transition: all var(--transition-fast);
+        border: 1px solid transparent;
+        font-size: var(--font-size-sm);
+        min-height: 40px;
+        min-width: 40px;
+    }
+    
+    .nav__social-link span {
+        display: none;
+    }
+    
+    .nav__social-link:hover {
+        color: var(--color-primary);
+        background-color: rgba(199, 120, 221, 0.1);
+        border-color: var(--color-primary);
+    }
+    
+    .nav__social-icon {
+        width: 20px;
+        height: 20px;
+        filter: brightness(0.7);
+        transition: filter var(--transition-fast);
+        flex-shrink: 0;
+    }
+    
+    .nav__social-link:hover .nav__social-icon {
+        filter: brightness(1) sepia(1) saturate(2) hue-rotate(240deg);
     }
     
     /* Mobile Language Switcher */
