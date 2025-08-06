@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & Donate</title>
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/png" href="../assets/images/icon/icon.png">
+    <link rel="shortcut icon" href="../assets/images/icon/icon.png">
+    <link rel="apple-touch-icon" href="../assets/images/icon/icon.png">
+    <meta name="theme-color" content="#C778DD">
+    
+    <link rel="stylesheet" href="src/css/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <div class="logo">
+                        <img src="../assets/images/icon/icon.png" alt="Kenzn2 Logo" class="logo__image">
+                    </div>
+                    <span class="header__name">SUPPORT KENZN2</span>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="../index.html" class="nav__link">
+                                <span class="nav__hash">#</span>home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="Policy.html" class="nav__link">
+                                <span class="nav__hash">#</span>privacy
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#ways-to-support" class="nav__link">
+                                <span class="nav__hash">#</span>donate
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" type="button">
+                        <span class="mobile-menu-btn__line"></span>
+                        <span class="mobile-menu-btn__line"></span>
+                        <span class="mobile-menu-btn__line"></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            <span class="text-primary">Support My Work</span><br>
+                            Help Me Build Better Products
+                        </h1>
+                        <p class="hero__subtitle">
+                            Your support helps me continue developing free AI tools, extensions, and chatbots for the community.
+                        </p>
+                        <a href="#ways-to-support" class="btn btn--primary hero__cta">Support Now</a>
+                    </div>
+                    
+                    <div class="hero__image">
+                        <div class="hero__image-container">
+                            <div class="support-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">5+</div>
+                                    <div class="stat-label">Active Projects</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">100%</div>
+                                    <div class="stat-label">Free & Open</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">24/7</div>
+                                    <div class="stat-label">Support</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero__quote">
+                    <blockquote class="quote">
+                        <p class="quote__text">"Your contributions, no matter how small, are a great support to me and help me realize that I am creating value for everyone."</p>
+                        <footer class="quote__author">- Kenzn2</footer>
+                    </blockquote>
+                </div>
+            </div>
+            
+            <!-- Decorative dots -->
+            <div class="dots dots--hero-top"></div>
+            <div class="dots dots--hero-bottom"></div>
+            
+            <!-- Decorative shapes -->
+            <div class="decorative-shape shape--square shape--hero-top"></div>
+            <div class="decorative-shape shape--rectangle shape--hero-left"></div>
+        </section>
+
+        <!-- Ways to Support Section -->
+        <section id="ways-to-support" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-hash">#</span>ways-to-support
+                    </h2>
+                </div>
+                
+                <div class="donate-methods">
+                    <!-- PayPal -->
+                    <div class="donate-card" onclick="showDonationInfo('paypal')">
+                        <div class="donate-card__icon">💳</div>
+                        <h3 class="donate-card__title">PayPal</h3>
+                        <p class="donate-card__description">Quick and secure donations</p>
+                        <button class="donate-card__button">Donate via PayPal</button>
+                    </div>
+
+                    <!-- Bank Transfer -->
+                    <div class="donate-card" onclick="showDonationInfo('bank')">
+                        <div class="donate-card__icon">🏦</div>
+                        <h3 class="donate-card__title">Bank Transfer</h3>
+                        <p class="donate-card__description">Direct transfer via banking</p>
+                        <button class="donate-card__button">Get Bank Info</button>
+                    </div>
+
+                    <!-- Cryptocurrency -->
+                    <div class="donate-card" onclick="showDonationInfo('crypto')">
+                        <div class="donate-card__icon">₿</div>
+                        <h3 class="donate-card__title">Cryptocurrency</h3>
+                        <p class="donate-card__description">Bitcoin, Ethereum, etc.</p>
+                        <button class="donate-card__button">Get Crypto Address</button>
+                    </div>
+
+                    <!-- Free Support -->
+                    <div class="donate-card" onclick="showDonationInfo('free')">
+                        <div class="donate-card__icon">🌟</div>
+                        <h3 class="donate-card__title">Free Support</h3>
+                        <p class="donate-card__description">Star repos, share projects</p>
+                        <button class="donate-card__button">Ways to Help</button>
+                    </div>
+                </div>
+
+                <!-- Donation Info Modals -->
+                <div id="paypal-info" class="donation-info">
+                    <div class="donation-info__header">
+                        <h3 class="donation-info__title">💳 PayPal Donation</h3>
+                        <button class="donation-info__close" onclick="hideDonationInfo()">&times;</button>
+                    </div>
+                    <div class="donation-info__content">
+                        <div class="donation-info__details">
+                            <h4>PayPal Information</h4>
+                            <p><strong>PayPal Link:</strong> <a href="https://paypal.me/AnhNguyenZn2?locale.x=vi_VN&country.x=VN" target="_blank" style="color: var(--color-primary)">https://paypal.me/AnhNguyenZn2</a></p>
+                            <p><strong>Email:</strong> Antoan0105@gmail.com</p>
+                            <p><strong>Supported:</strong> All major currencies</p>
+                            <p><strong>Features:</strong> One-time or recurring donations</p>
+                            <p>Click the link above or scan the QR code to donate quickly and securely through PayPal.</p>
+                        </div>
+                        <div class="donation-info__qr">
+                            <div class="donation-info__qr-code">
+                                <img src="src/images/paypal_qr.png" alt="PayPal QR Code" class="qr-code-image">
+                            </div>
+                            <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">Scan to donate via PayPal</p>
+                            <p style="color: var(--color-primary); font-size: var(--font-size-xs); margin-top: var(--spacing-xs); cursor: pointer;" onclick="window.open('src/images/paypal_qr.png', '_blank')">Click to view full image</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bank-info" class="donation-info">
+                    <div class="donation-info__header">
+                        <h3 class="donation-info__title">🏦 Bank Transfer (VND)</h3>
+                        <button class="donation-info__close" onclick="hideDonationInfo()">&times;</button>
+                    </div>
+                    <div class="donation-info__content">
+                        <div class="donation-info__details">
+                            <h4>Bank Transfer Information</h4>
+                            <p><strong>Bank:</strong> Vietcombank</p>
+                            <p><strong>Account Name:</strong> NGUYEN TUAN ANH</p>
+                            <p><strong>Account Number:</strong> 1017198748</p>
+                            <p><strong>Branch:</strong> Ho Chi Minh City</p>
+                            <p><strong>Currency:</strong> VND</p>
+                            
+                        </div>
+                        <div class="donation-info__qr">
+                            <div class="donation-info__qr-code">
+                                <img src="src/images/bank.jpg" alt="Bank Transfer QR Code" class="qr-code-image">
+                            </div>
+                            <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">Scan to transfer via mobile banking</p>
+                            <p style="color: var(--color-primary); font-size: var(--font-size-xs); margin-top: var(--spacing-xs); cursor: pointer;" onclick="window.open('src/images/bank.jpg', '_blank')">Click to view full image</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="crypto-info" class="donation-info">
+                    <div class="donation-info__header">
+                        <h3 class="donation-info__title">₿ Cryptocurrency</h3>
+                        <button class="donation-info__close" onclick="hideDonationInfo()">&times;</button>
+                    </div>
+                    <div class="donation-info__content">
+                        <div class="donation-info__details">
+                            <h4>Crypto Wallet Addresses</h4>
+                            <p><strong>Bitcoin (BTC):</strong><br>bc1pved78fte08ryn600w5s3prky7vv52svsceyamnnykkhsrfnlhyaqh4u0yh</p>
+                            <p><strong>Ethereum (ETH):</strong><br>0x07f71bB7984d6f20cAe6bbd858FBd0A95d87C6C1</p>
+                            <p><strong>Features:</strong> Anonymous, fast, low fees</p>
+                            <p>Send any amount to the addresses above. All major cryptocurrencies accepted.</p>
+                        </div>
+                        <div class="donation-info__qr">
+                            <div class="donation-info__qr-code">
+                                <img src="src/images/bitcoin.jpg" alt="Bitcoin QR Code" class="qr-code-image">
+                            </div>
+                            <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">Scan to send Bitcoin</p>
+                            <p style="color: var(--color-primary); font-size: var(--font-size-xs); margin-top: var(--spacing-xs); cursor: pointer;" onclick="window.open('src/images/bitcoin.jpg', '_blank')">Click to view full image</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="free-info" class="donation-info">
+                    <div class="donation-info__header">
+                        <h3 class="donation-info__title">🌟 Free Ways to Help</h3>
+                        <button class="donation-info__close" onclick="hideDonationInfo()">&times;</button>
+                    </div>
+                    <div class="donation-info__content">
+                        <div class="donation-info__details">
+                            <h4>Free Support Options</h4>
+                            <p><strong>⭐ Star repositories:</strong> Give stars to my GitHub projects</p>
+                            <p><strong>📢 Share projects:</strong> Tell friends about useful tools</p>
+                            <p><strong>🐛 Report bugs:</strong> Help improve software quality</p>
+                            <p><strong>💡 Feature requests:</strong> Suggest new features</p>
+                            <p><strong>📝 Write reviews:</strong> Leave feedback on extensions</p>
+                            <p>Your engagement helps grow the community and motivates continued development!</p>
+                        </div>
+                        <div class="donation-info__qr">
+                            <div style="text-align: center; padding: var(--spacing-lg);">
+                                <div style="font-size: 4rem; margin-bottom: var(--spacing-md);">🚀</div>
+                                <p style="color: var(--color-primary); font-weight: 600;">Visit GitHub</p>
+                                <a href="https://github.com/kenzn2" target="_blank" 
+                                   style="color: var(--color-text-secondary); font-size: var(--font-size-sm); text-decoration: underline;">
+                                   github.com/kenzn2
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Decorative elements -->
+            <div class="dots dots--projects-left"></div>
+            <div class="dots dots--projects-right"></div>
+            
+            <!-- Decorative shapes -->
+            <div class="decorative-shape shape--square-small shape--projects-top"></div>
+            <div class="decorative-shape shape--rectangle shape--projects-bottom"></div>
+        </section>
+
+        <!-- Supporters Section -->
+        <section class="skills">
+            <div class="container">
+                <div class="section-header section-header--skills">
+                    <h2 class="section-title">
+                        <span class="section-hash">#</span>supporters
+                    </h2>
+                </div>
+                
+                <div class="skills__content">
+                    <div class="skills__info">
+                        <div class="supporters-message">
+                            <h3 class="skill-category__title">Thank You to All Supporters! 🙏</h3>
+                            <p class="about__paragraph">
+                                Every supporter, whether through donations, code contributions, bug reports, or simply using my tools, 
+                                helps make these projects better for everyone.
+                            </p>
+                            <p class="about__paragraph">
+                                <strong>Special recognition for:</strong>
+                            </p>
+                            <ul class="supporters-list">
+                                <li>✨ Monthly GitHub Sponsors</li>
+                                <li>🐛 Bug reporters and feature requesters</li>
+                                <li>📢 Community members who share my projects</li>
+                                <li>⭐ Those who star and follow my repositories</li>
+                                <li>💖 Everyone who believes in open-source AI tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Decorative dots -->
+            <div class="dots dots--skills"></div>
+            
+            <!-- Decorative shapes -->
+            <div class="decorative-shape shape--square shape--skills-left"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <div class="footer__logo">
+                        <div class="logo">
+                            <img src="../assets/images/icon/icon.png" alt="Kenzn2 Logo" class="logo__image">
+                        </div>
+                        <div class="footer__brand">
+                            <span class="footer__name">Nguyen Tuan Anh</span>
+                            <span class="footer__email">Antoan0105@gmail.com</span>
+                        </div>
+                    </div>
+                    <p class="footer__description">AI/ML developer and computer vision specialist</p>
+                </div>
+                
+                <div class="footer__media">
+                    <h3 class="footer__media-title">Social Network</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com/kenzn2" class="social-link" title="Facebook" target="_blank">
+                            <img src="../assets/images/icon/facebook.svg" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/kenzn2/" class="social-link" title="LinkedIn" target="_blank">
+                            <img src="../assets/images/icon/linkedin.svg" alt="LinkedIn" class="social-icon">
+                        </a>
+                        <a href="https://discord.gg/CWU7pYMDtR" class="social-link" title="Discord" target="_blank">
+                            <img src="../assets/images/icon/discord.svg" alt="Discord" class="social-icon">
+                        </a>
+                        <a href="https://github.com/kenzn2" class="social-link" title="GitHub" target="_blank">
+                            <img src="../assets/images/icon/github.svg" alt="GitHub" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Copyright 2025. Support Kenzn2 Projects - Building Free AI Tools</p>
+            </div>
+        </div>
+        <div class="dots dots--contacts-right"></div>
+        
+        <!-- Decorative shapes -->
+        <div class="decorative-shape shape--rectangle shape--footer-left"></div>
+    </footer>
+
+    <script src="src/js/common.js"></script>
+</body>
+</html>
