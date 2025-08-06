@@ -186,21 +186,6 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
 }
 
-.logo__grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1px;
-    width: 100%;
-    height: 100%;
-}
-
-.logo__square {
-    background-color: var(--color-white);
-    width: 100%;
-    height: 100%;
-}
-
 /* Navigation */
 .nav {
     display: flex;
@@ -736,48 +721,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #f44336;
 }
 
-/* Support Section */
-.support {
-    padding: var(--spacing-xl) 0;
-    background-color: var(--color-bg-secondary);
-}
 
-.support__title {
-    text-align: center;
-    font-size: var(--font-size-xl);
-    font-weight: 500;
-    margin-bottom: var(--spacing-lg);
-}
-
-.support__methods {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-lg);
-}
-
-.support-card {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-md);
-    border: var(--border-width) solid var(--color-gray);
-    border-radius: var(--border-radius);
-    transition: transform var(--transition-normal);
-}
-
-.support-card:hover {
-    transform: translateY(-3px);
-    border-color: var(--color-primary);
-}
-
-.support-card__icon {
-    font-size: var(--font-size-xl);
-}
-
-.support-card__label {
-    color: var(--color-gray);
-    font-size: var(--font-size-sm);
-}
 
 /* Footer */
 .footer {
@@ -933,13 +877,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .dots--projects-left {
     top: 50%;
-    left: -42px;
+    left: 0;
     animation: float 10s ease-in-out infinite;
 }
 
 .dots--projects-right {
     bottom: 20%;
-    right: -42px;
+    right: 0;
     animation: float 7s ease-in-out infinite reverse;
 }
 
@@ -957,13 +901,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .dots--contacts-left {
     top: 30%;
-    left: -50px;
+    left: 0;
     animation: float 12s ease-in-out infinite;
 }
 
 .dots--contacts-right {
     bottom: 30%;
-    right: -50px;
+    right: 0;
     animation: float 8s ease-in-out infinite reverse;
 }
 
@@ -1334,10 +1278,7 @@ h1, h2, h3, h4, h5, h6 {
         gap: var(--spacing-xl);
     }
     
-    .support__methods {
-        flex-direction: column;
-        align-items: center;
-    }
+
     
     .dots {
         display: none;
@@ -1404,3 +1345,7 @@ h1, h2, h3, h4, h5, h6 {
         height: 18px;
     }
 }
+
+
+
+
