@@ -541,23 +541,65 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about__facts {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: var(--spacing-lg);
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .fact-item {
     border: var(--border-width) solid var(--color-gray);
     border-radius: var(--border-radius);
     padding: var(--spacing-lg);
+    width: 100%;
+}
+
+.fact-item--education {
+    background: linear-gradient(135deg, rgba(199, 120, 221, 0.05) 0%, rgba(199, 120, 221, 0.02) 100%);
+}
+
+.fact-item--experience {
+    background: linear-gradient(135deg, rgba(199, 120, 221, 0.03) 0%, rgba(199, 120, 221, 0.01) 100%);
+}
+
+.fact-item__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.fact-section {
+    position: relative;
+}
+
+.fact-section__title {
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.fact-section__title::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-primary);
+    border-radius: 1px;
 }
 
 .fact-item__title {
     font-size: var(--font-size-lg);
     font-weight: 500;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
     color: var(--color-white);
+    text-align: center;
+    position: relative;
+    padding-bottom: var(--spacing-md);
 }
 
 .timeline-item {
@@ -571,6 +613,14 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: none;
 }
 
+.fact-section .timeline-item {
+    border-bottom: none;
+}
+
+.fact-section .timeline-item:not(:last-child) {
+    margin-bottom: var(--spacing-md);
+}
+
 .timeline-item__date {
     font-size: var(--font-size-sm);
     color: var(--color-primary);
@@ -578,7 +628,8 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 120px;
 }
 
-.timeline-item__content h4 {
+.timeline-item__content h4,
+.timeline-item__content h5 {
     font-size: var(--font-size-base);
     font-weight: 500;
     margin-bottom: var(--spacing-xs);
@@ -1255,8 +1306,16 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .about__facts {
-        grid-template-columns: 1fr;
+        max-width: 100%;
         gap: var(--spacing-md);
+    }
+    
+    .fact-item__content {
+        gap: var(--spacing-lg);
+    }
+    
+    .fact-section__title {
+        font-size: var(--font-size-sm);
     }
     
     .hero__title {
