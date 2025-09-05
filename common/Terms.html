@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - Kenzn2</title>
+    <title>Terms of Service - Kenzn2 Projects</title>
     
     <!-- Favicon and Icons -->
     <link rel="icon" type="image/png" href="../assets/images/icon/icon.png">
@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -25,7 +28,7 @@
                     <div class="logo">
                         <img src="../assets/images/icon/icon.png" alt="Kenzn2 Logo" class="logo__image">
                     </div>
-                    <span class="header__name">TERMS OF SERVICE</span>
+                    <span class="header__name">NGUYEN TUAN ANH</span>
                 </div>
                 
                 <nav class="nav">
@@ -41,13 +44,23 @@
                             </a>
                         </li>
                         <li class="nav__item">
+                            <a href="Terms.html" class="nav__link">
+                                <span class="nav__hash">#</span>terms
+                            </a>
+                        </li>
+                        <li class="nav__item">
                             <a href="DataDeletion.html" class="nav__link">
-                                <span class="nav__hash">#</span>data deletion
+                                <span class="nav__hash">#</span>data-deletion
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="donate.html" class="nav__link">
                                 <span class="nav__hash">#</span>donate
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <span class="nav__hash">#</span>contact
                             </a>
                         </li>
                     </ul>
@@ -61,331 +74,257 @@
                 </nav>
             </div>
         </div>
-
-        <!-- Mobile Menu Overlay -->
-        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
     </header>
 
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section class="hero hero--compact">
+        <section class="hero hero--policy">
             <div class="container">
                 <div class="hero__content">
-                    <h1 class="hero__title">
-                        <span class="text-primary">Terms</span> of Service
-                    </h1>
-                    <p class="hero__subtitle">
-                        Legal terms and conditions for using Kenzn2 applications and services
-                    </p>
+                    <div class="hero__text-center">
+                        <h1 class="policy__main-title">
+                            Terms of Service<br>
+                            <span class="policy__subtitle">For Kenzn2 Projects</span>
+                        </h1>
+                        <p class="policy__description">
+                            Please read these terms carefully before using our services, applications, and platforms.
+                        </p>
+                    </div>
                 </div>
             </div>
+            
+            <!-- Decorative dots -->
+            <div class="dots dots--hero-top"></div>
+            <div class="dots dots--hero-bottom"></div>
+            
+            <!-- Decorative shapes -->
+            <div class="decorative-shape shape--square shape--hero-top"></div>
+            <div class="decorative-shape shape--rectangle shape--hero-left"></div>
         </section>
 
-        <!-- Terms Content -->
-        <section class="content">
+        <!-- Terms Content Section -->
+        <section class="about">
             <div class="container">
-                <div class="content__body">
-                    
-                    <!-- Agreement -->
-                    <div class="content__section">
-                        <h2 class="content__title">Agreement to Terms</h2>
-                        <p class="content__text">
-                            By accessing and using any Kenzn2 applications, services, Discord bots, Chrome extensions, 
-                            or AI/ML tools ("Services"), you agree to be bound by these Terms of Service ("Terms"). 
-                            If you do not agree to these Terms, please do not use our Services.
-                        </p>
-                        <div class="notice-card notice-card--info">
-                            <p><strong>Effective Date:</strong> September 5, 2025</p>
-                            <p>These Terms apply to all users of Kenzn2 services worldwide.</p>
-                        </div>
-                    </div>
-
-                    <!-- Services Description -->
-                    <div class="content__section">
-                        <h2 class="content__title">Our Services</h2>
-                        <p class="content__text">
-                            Kenzn2 provides various digital services including but not limited to:
-                        </p>
-                        
-                        <div class="content__grid">
-                            <div class="info-card">
-                                <h3 class="info-card__title">Discord Bots</h3>
-                                <ul class="info-list">
-                                    <li>AI-powered conversation bots</li>
-                                    <li>Utility and entertainment features</li>
-                                    <li>Server management tools</li>
-                                    <li>Custom integrations and APIs</li>
-                                </ul>
-                            </div>
-                            <div class="info-card">
-                                <h3 class="info-card__title">Chrome Extensions</h3>
-                                <ul class="info-list">
-                                    <li>Browser productivity tools</li>
-                                    <li>Content enhancement features</li>
-                                    <li>Automation utilities</li>
-                                    <li>Educational applications</li>
-                                </ul>
-                            </div>
-                            <div class="info-card">
-                                <h3 class="info-card__title">AI/ML Applications</h3>
-                                <ul class="info-list">
-                                    <li>Computer vision solutions</li>
-                                    <li>Natural language processing</li>
-                                    <li>Data analysis tools</li>
-                                    <li>Machine learning models</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- User Responsibilities -->
-                    <div class="content__section">
-                        <h2 class="content__title">User Responsibilities</h2>
-                        <p class="content__text">
-                            When using our Services, you agree to:
-                        </p>
-                        
-                        <div class="responsibility-grid">
-                            <div class="responsibility-card responsibility-card--do">
-                                <h3>✅ You May</h3>
-                                <ul>
-                                    <li>Use Services for personal and educational purposes</li>
-                                    <li>Provide feedback and suggestions</li>
-                                    <li>Share content created with our tools</li>
-                                    <li>Report bugs and technical issues</li>
-                                    <li>Use APIs within reasonable limits</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="responsibility-card responsibility-card--dont">
-                                <h3>❌ You May Not</h3>
-                                <ul>
-                                    <li>Use Services for illegal or harmful activities</li>
-                                    <li>Attempt to reverse engineer or hack our systems</li>
-                                    <li>Violate platform policies (Discord, Chrome Web Store)</li>
-                                    <li>Share or distribute malicious content</li>
-                                    <li>Abuse or spam our services</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Privacy and Data -->
-                    <div class="content__section">
-                        <h2 class="content__title">Privacy & Data Handling</h2>
-                        <p class="content__text">
-                            Your privacy is important to us. Our data handling practices include:
-                        </p>
-                        
-                        <div class="privacy-features">
-                            <div class="feature-item">
-                                <div class="feature-item__icon">🔒</div>
-                                <div class="feature-item__content">
-                                    <h3>Data Minimization</h3>
-                                    <p>We only collect data necessary for service functionality</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <div class="feature-item__icon">⏱️</div>
-                                <div class="feature-item__content">
-                                    <h3>Temporary Processing</h3>
-                                    <p>Most user data is processed temporarily and not permanently stored</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <div class="feature-item__icon">🛡️</div>
-                                <div class="feature-item__content">
-                                    <h3>Security Measures</h3>
-                                    <p>Industry-standard security practices protect your information</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <div class="feature-item__icon">📋</div>
-                                <div class="feature-item__content">
-                                    <h3>Transparency</h3>
-                                    <p>Clear documentation of what data we collect and how it's used</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <p class="content__text">
-                            For detailed information about data collection and privacy practices, 
-                            please review our <a href="Policy.html" class="text-link">Privacy Policy</a> 
-                            and <a href="DataDeletion.html" class="text-link">Data Deletion Policy</a>.
-                        </p>
-                    </div>
-
-                    <!-- Service Availability -->
-                    <div class="content__section">
-                        <h2 class="content__title">Service Availability</h2>
-                        <div class="notice-card notice-card--warning">
-                            <h3>No Warranty</h3>
-                            <p>
-                                Our Services are provided "as is" without warranty of any kind. We do not guarantee:
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-hash">#</span>terms-of-service
+                    </h2>
+                </div>
+                
+                <div class="policy__content">
+                    <div class="policy__text">
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">1. Acceptance of Terms</h3>
+                            <p class="about__paragraph">
+                                By accessing or using any Kenzn2 services, including but not limited to:
                             </p>
-                            <ul>
-                                <li>Continuous availability or uptime</li>
-                                <li>Error-free operation</li>
-                                <li>Compatibility with all systems</li>
-                                <li>Permanent availability of features</li>
+                            <ul class="policy-list">
+                                <li>Discord bots and applications</li>
+                                <li>Chrome extensions and browser tools</li>
+                                <li>AI/ML applications and services</li>
+                                <li>Web applications and platforms</li>
+                                <li>Mobile applications</li>
+                            </ul>
+                            <p class="about__paragraph">
+                                You agree to be bound by these Terms of Service and all applicable laws and regulations.
+                            </p>
+                        </div>
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">2. Description of Service</h3>
+                            <p class="about__paragraph">
+                                Kenzn2 provides various digital services and applications including:
+                            </p>
+                            <ul class="policy-list">
+                                <li><strong>Discord Services:</strong> Chatbots, moderation tools, entertainment features</li>
+                                <li><strong>Browser Extensions:</strong> Productivity tools, utilities, and enhancements</li>
+                                <li><strong>AI/ML Services:</strong> Computer vision, natural language processing, and machine learning solutions</li>
+                                <li><strong>Web Applications:</strong> Online tools and platforms for various purposes</li>
+                                <li><strong>Mobile Apps:</strong> iOS and Android applications</li>
                             </ul>
                         </div>
-                        
-                        <p class="content__text">
-                            We reserve the right to modify, suspend, or discontinue any Service at any time 
-                            without prior notice. We will make reasonable efforts to notify users of significant changes.
-                        </p>
-                    </div>
 
-                    <!-- Intellectual Property -->
-                    <div class="content__section">
-                        <h2 class="content__title">Intellectual Property</h2>
-                        <div class="ip-info">
-                            <div class="ip-section">
-                                <h3>Our Rights</h3>
-                                <p>
-                                    All Kenzn2 services, code, designs, and documentation are protected by 
-                                    intellectual property laws. You may not copy, modify, or distribute our 
-                                    proprietary technology without permission.
-                                </p>
-                            </div>
-                            <div class="ip-section">
-                                <h3>Your Rights</h3>
-                                <p>
-                                    You retain ownership of content you create using our Services. We may 
-                                    use anonymized data and feedback to improve our services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Limitation of Liability -->
-                    <div class="content__section">
-                        <h2 class="content__title">Limitation of Liability</h2>
-                        <div class="notice-card notice-card--legal">
-                            <p>
-                                <strong>IMPORTANT LEGAL NOTICE:</strong> To the maximum extent permitted by law, 
-                                Kenzn2 shall not be liable for any indirect, incidental, special, consequential, 
-                                or punitive damages, including but not limited to:
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">3. User Responsibilities</h3>
+                            <p class="about__paragraph">
+                                When using our services, you agree to:
                             </p>
-                            <ul>
-                                <li>Loss of data or content</li>
-                                <li>Business interruption</li>
-                                <li>Lost profits or revenue</li>
-                                <li>System downtime</li>
-                                <li>Third-party service failures</li>
+                            <ul class="policy-list">
+                                <li>Use services only for lawful purposes</li>
+                                <li>Not attempt to hack, reverse engineer, or exploit our systems</li>
+                                <li>Not use services to spam, harass, or harm others</li>
+                                <li>Respect intellectual property rights</li>
+                                <li>Provide accurate information when required</li>
+                                <li>Comply with platform-specific terms (Discord, Chrome Web Store, App Store, etc.)</li>
                             </ul>
-                            <p>
-                                Our total liability shall not exceed the amount you paid for our services 
-                                in the 12 months preceding the claim.
+                        </div>
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">4. Privacy and Data</h3>
+                            <p class="about__paragraph">
+                                Your privacy is important to us. Please review our Privacy Policy for detailed information about how we collect, use, and protect your data. Key points include:
+                            </p>
+                            <ul class="policy-list">
+                                <li>We collect minimal data necessary for service functionality</li>
+                                <li>We do not sell personal information to third parties</li>
+                                <li>You have rights regarding your data, including deletion requests</li>
+                                <li>We implement security measures to protect your information</li>
+                            </ul>
+                        </div>
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">5. Intellectual Property</h3>
+                            <p class="about__paragraph">
+                                All content, features, and functionality of our services are owned by Kenzn2 and are protected by:
+                            </p>
+                            <ul class="policy-list">
+                                <li>Copyright laws</li>
+                                <li>Trademark protections</li>
+                                <li>Trade secret laws</li>
+                                <li>Other intellectual property rights</li>
+                            </ul>
+                            <p class="about__paragraph">
+                                You may not reproduce, distribute, modify, or create derivative works without explicit permission.
+                            </p>
+                        </div>
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">6. Service Availability</h3>
+                            <p class="about__paragraph">
+                                We strive to provide reliable services, but:
+                            </p>
+                            <ul class="policy-list">
+                                <li>Services may be temporarily unavailable for maintenance</li>
+                                <li>We do not guarantee 100% uptime</li>
+                                <li>Features may be modified or discontinued</li>
+                                <li>We reserve the right to suspend or terminate services</li>
+                            </ul>
+                        </div>
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">7. Limitation of Liability</h3>
+                            <p class="about__paragraph">
+                                To the maximum extent permitted by law:
+                            </p>
+                            <ul class="policy-list">
+                                <li>Services are provided "as is" without warranties</li>
+                                <li>We are not liable for indirect, incidental, or consequential damages</li>
+                                <li>Our total liability is limited to the amount paid for services (if any)</li>
+                                <li>We are not responsible for third-party content or services</li>
+                            </ul>
+                        </div>
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">8. Termination</h3>
+                            <p class="about__paragraph">
+                                Either party may terminate the use of services:
+                            </p>
+                            <ul class="policy-list">
+                                <li>Users may stop using services at any time</li>
+                                <li>We may suspend or terminate access for violations</li>
+                                <li>Termination does not affect accrued rights or obligations</li>
+                                <li>Some provisions may survive termination</li>
+                            </ul>
+                        </div>
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">9. Changes to Terms</h3>
+                            <p class="about__paragraph">
+                                We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting. Your continued use of services constitutes acceptance of modified terms.
+                            </p>
+                        </div>
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">10. Contact Information</h3>
+                            <p class="about__paragraph">
+                                For questions about these Terms of Service, please contact us:
+                            </p>
+                            <div class="contact-info">
+                                <p><strong>Email:</strong> Antoan0105@gmail.com</p>
+                                <p><strong>Developer:</strong> Nguyen Tuan Anh (Kenzn2)</p>
+                            </div>
+                        </div>
+
+                        <div class="policy-footer">
+                            <p class="about__paragraph">
+                                <strong>Last Updated:</strong> September 5, 2025<br>
+                                These terms are effective immediately and apply to all Kenzn2 services and applications.
                             </p>
                         </div>
                     </div>
-
-                    <!-- Third-Party Services -->
-                    <div class="content__section">
-                        <h2 class="content__title">Third-Party Services</h2>
-                        <p class="content__text">
-                            Our Services may integrate with or rely on third-party platforms:
-                        </p>
-                        
-                        <div class="third-party-list">
-                            <div class="third-party-item">
-                                <strong>Discord:</strong> Subject to Discord's Terms of Service and Community Guidelines
-                            </div>
-                            <div class="third-party-item">
-                                <strong>Chrome Web Store:</strong> Subject to Google's Developer Program Policies
-                            </div>
-                            <div class="third-party-item">
-                                <strong>AI APIs:</strong> Subject to respective AI service provider terms
-                            </div>
-                            <div class="third-party-item">
-                                <strong>Cloud Services:</strong> Subject to hosting provider terms and conditions
-                            </div>
-                        </div>
-                        
-                        <p class="content__text">
-                            We are not responsible for third-party service policies, availability, or actions.
-                        </p>
-                    </div>
-
-                    <!-- Termination -->
-                    <div class="content__section">
-                        <h2 class="content__title">Termination</h2>
-                        <p class="content__text">
-                            We may terminate or suspend your access to our Services immediately, without prior notice, 
-                            for any reason including breach of these Terms. Upon termination:
-                        </p>
-                        <ul class="content__list">
-                            <li>Your right to use the Services ceases immediately</li>
-                            <li>We may delete your data according to our retention policies</li>
-                            <li>You may request data deletion as outlined in our Data Deletion Policy</li>
-                            <li>Sections regarding liability, intellectual property, and dispute resolution survive termination</li>
-                        </ul>
-                    </div>
-
-                    <!-- Updates to Terms -->
-                    <div class="content__section">
-                        <h2 class="content__title">Updates to Terms</h2>
-                        <p class="content__text">
-                            We may update these Terms periodically to reflect changes in our Services or legal requirements. 
-                            When we make changes:
-                        </p>
-                        <ul class="content__list">
-                            <li>We will update the "Last Updated" date</li>
-                            <li>Significant changes will be communicated through our services</li>
-                            <li>Continued use constitutes acceptance of new Terms</li>
-                            <li>You can always find the current version at this URL</li>
-                        </ul>
-                    </div>
-
-                    <!-- Contact Information -->
-                    <div class="content__section">
-                        <h2 class="content__title">Contact & Support</h2>
-                        <p class="content__text">
-                            For questions about these Terms or our Services, please contact us:
-                        </p>
-                        
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <strong>Email:</strong> 
-                                <a href="mailto:Antoan0105@gmail.com">Antoan0105@gmail.com</a>
-                            </div>
-                            <div class="contact-item">
-                                <strong>Discord:</strong> 
-                                <a href="https://discord.gg/CWU7pYMDtR" target="_blank">Join our support server</a>
-                            </div>
-                            <div class="contact-item">
-                                <strong>GitHub:</strong> 
-                                <a href="https://github.com/kenzn2" target="_blank">github.com/kenzn2</a>
-                            </div>
-                            <div class="contact-item">
-                                <strong>Response Time:</strong> Within 72 hours for support inquiries
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Governing Law -->
-                    <div class="content__section">
-                        <h2 class="content__title">Governing Law</h2>
-                        <p class="content__text">
-                            These Terms are governed by and construed in accordance with the laws of Vietnam. 
-                            Any disputes arising from these Terms or our Services will be subject to the 
-                            exclusive jurisdiction of the courts in Ho Chi Minh City, Vietnam.
-                        </p>
-                    </div>
-
-                    <!-- Last Updated -->
-                    <div class="content__section">
-                        <div class="last-updated">
-                            <p><strong>Last Updated:</strong> September 5, 2025</p>
-                            <p>Version 1.0 - Initial Terms of Service</p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
+            
+            <!-- Decorative dots -->
+            <div class="dots dots--about"></div>
+            
+            <!-- Decorative shapes -->
+            <div class="decorative-shape shape--overlapped shape--about-right"></div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contacts" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-hash">#</span>contact-us
+                    </h2>
+                    <p class="section-subtitle">
+                        Questions about our terms? Get in touch
+                    </p>
+                </div>
+                
+                <div class="contacts__content">
+                    <div class="contacts__info">
+                        <p class="contacts__description">
+                            If you have any questions about these Terms of Service or need clarification about our policies, feel free to reach out. We're here to help and ensure you understand your rights and responsibilities.
+                        </p>
+                        
+                        <div class="contact-card">
+                            <h3 class="contact-card__title">Get in Touch</h3>
+                            <div class="contact-methods">
+                                <a href="mailto:Antoan0105@gmail.com" class="contact-method">
+                                    <span class="contact-method__icon">📧</span>
+                                    <span>Antoan0105@gmail.com</span>
+                                </a>
+                                <a href="https://discord.gg/CWU7pYMDtR" class="contact-method" target="_blank">
+                                    <span class="contact-method__icon">💬</span>
+                                    <span>Discord Community</span>
+                                </a>
+                                <a href="https://github.com/kenzn2" class="contact-method" target="_blank">
+                                    <span class="contact-method__icon">🔗</span>
+                                    <span>GitHub Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div id="formStatus"></div>
+                        <div class="form-group">
+                            <input type="text" id="name" name="from_name" class="form-input" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="from_email" class="form-input" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="title" name="subject" class="form-input" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Message about terms of service..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary form-submit" id="submitBtn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Decorative dots -->
+            <div class="dots dots--contacts-left"></div>
+            <div class="dots dots--contacts-right"></div>
+            
+            <!-- Decorative shapes -->
+            <div class="decorative-shape shape--square-small shape--contacts-top"></div>
         </section>
     </main>
 
@@ -426,9 +365,13 @@
             </div>
             
             <div class="footer__bottom">
-                <p class="footer__copyright">© Copyright 2025. Design by Elias at <a href="https://www.figma.com/community/file/1164933568884615740" target="_blank" style="color: var(--color-primary); text-decoration: none;">Figma</a>, coded with MCP by Kenzn2</p>
+                <p class="footer__copyright">© Copyright 2025. Terms of Service for Kenzn2 Projects</p>
             </div>
         </div>
+        <div class="dots dots--contacts-right"></div>
+        
+        <!-- Decorative shapes -->
+        <div class="decorative-shape shape--rectangle shape--footer-left"></div>
     </footer>
 
     <script src="src/js/common.js"></script>

@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -25,7 +28,7 @@
                     <div class="logo">
                         <img src="../assets/images/icon/icon.png" alt="Kenzn2 Logo" class="logo__image">
                     </div>
-                    <span class="header__name">DATA DELETION POLICY</span>
+                    <span class="header__name">NGUYEN TUAN ANH</span>
                 </div>
                 
                 <nav class="nav">
@@ -46,8 +49,18 @@
                             </a>
                         </li>
                         <li class="nav__item">
+                            <a href="DataDeletion.html" class="nav__link">
+                                <span class="nav__hash">#</span>data-deletion
+                            </a>
+                        </li>
+                        <li class="nav__item">
                             <a href="donate.html" class="nav__link">
                                 <span class="nav__hash">#</span>donate
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <span class="nav__hash">#</span>contact
                             </a>
                         </li>
                     </ul>
@@ -69,201 +82,223 @@
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section class="hero hero--compact">
+        <section class="hero hero--policy">
             <div class="container">
                 <div class="hero__content">
-                    <h1 class="hero__title">
-                        <span class="text-primary">Data Deletion</span> Policy
-                    </h1>
-                    <p class="hero__subtitle">
-                        Your data privacy and deletion rights with Kenzn2 applications and services
-                    </p>
+                    <div class="hero__text-center">
+                        <h1 class="policy__main-title">
+                            Data Deletion Policy<br>
+                            <span class="policy__subtitle">For Kenzn2 Projects</span>
+                        </h1>
+                        <p class="policy__description">
+                            Your data privacy and deletion rights with Kenzn2 applications and services.
+                        </p>
+                    </div>
                 </div>
             </div>
+            
+            <!-- Decorative dots -->
+            <div class="dots dots--hero-top"></div>
+            <div class="dots dots--hero-bottom"></div>
+            
+            <!-- Decorative shapes -->
+            <div class="decorative-shape shape--square shape--hero-top"></div>
+            <div class="decorative-shape shape--rectangle shape--hero-left"></div>
         </section>
 
-        <!-- Data Deletion Content -->
-        <section class="content">
+        <!-- Data Deletion Content Section -->
+        <section class="about">
             <div class="container">
-                <div class="content__body">
-                    
-                    <!-- Overview -->
-                    <div class="content__section">
-                        <h2 class="content__title">Data Deletion Overview</h2>
-                        <p class="content__text">
-                            At Kenzn2, we respect your right to control your personal data. This Data Deletion Policy 
-                            explains how you can request the deletion of your data from our applications and services, 
-                            including Discord bots, Chrome extensions, and other AI/ML applications.
-                        </p>
-                    </div>
-
-                    <!-- What Data We Collect -->
-                    <div class="content__section">
-                        <h2 class="content__title">What Data May Be Collected</h2>
-                        <div class="content__grid">
-                            <div class="info-card">
-                                <h3 class="info-card__title">Discord Bots</h3>
-                                <ul class="info-list">
-                                    <li>User IDs and server IDs</li>
-                                    <li>Command usage statistics</li>
-                                    <li>User preferences and settings</li>
-                                    <li>Message content for AI processing (temporary)</li>
-                                </ul>
-                            </div>
-                            <div class="info-card">
-                                <h3 class="info-card__title">Chrome Extensions</h3>
-                                <ul class="info-list">
-                                    <li>Usage analytics and preferences</li>
-                                    <li>Extension settings and configurations</li>
-                                    <li>Performance metrics</li>
-                                </ul>
-                            </div>
-                            <div class="info-card">
-                                <h3 class="info-card__title">AI/ML Applications</h3>
-                                <ul class="info-list">
-                                    <li>Input data for processing</li>
-                                    <li>Generated outputs and results</li>
-                                    <li>Usage patterns and analytics</li>
-                                    <li>User feedback and ratings</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Data Deletion Rights -->
-                    <div class="content__section">
-                        <h2 class="content__title">Your Data Deletion Rights</h2>
-                        <p class="content__text">
-                            You have the right to request deletion of your personal data under various privacy laws 
-                            including GDPR, CCPA, and other applicable regulations. We provide multiple ways to 
-                            exercise this right:
-                        </p>
-                        
-                        <div class="deletion-methods">
-                            <div class="method-card">
-                                <div class="method-card__icon">📧</div>
-                                <h3 class="method-card__title">Email Request</h3>
-                                <p class="method-card__description">
-                                    Send a data deletion request to our support email with your user information.
-                                </p>
-                                <a href="mailto:Antoan0105@gmail.com?subject=Data%20Deletion%20Request" class="btn btn--primary">
-                                    Send Email Request
-                                </a>
-                            </div>
-                            
-                            <div class="method-card">
-                                <div class="method-card__icon">💬</div>
-                                <h3 class="method-card__title">Discord Support</h3>
-                                <p class="method-card__description">
-                                    Contact us directly through our Discord server for immediate assistance.
-                                </p>
-                                <a href="https://discord.gg/CWU7pYMDtR" class="btn btn--secondary" target="_blank">
-                                    Join Discord
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Deletion Process -->
-                    <div class="content__section">
-                        <h2 class="content__title">Data Deletion Process</h2>
-                        <div class="process-timeline">
-                            <div class="timeline-step">
-                                <div class="timeline-step__number">1</div>
-                                <div class="timeline-step__content">
-                                    <h3>Submit Request</h3>
-                                    <p>Contact us via email or Discord with your deletion request and user information.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-step">
-                                <div class="timeline-step__number">2</div>
-                                <div class="timeline-step__content">
-                                    <h3>Identity Verification</h3>
-                                    <p>We verify your identity to ensure the security of your data and prevent unauthorized deletions.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-step">
-                                <div class="timeline-step__number">3</div>
-                                <div class="timeline-step__content">
-                                    <h3>Data Removal</h3>
-                                    <p>We permanently delete your data from our systems within 30 days of verification.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-step">
-                                <div class="timeline-step__number">4</div>
-                                <div class="timeline-step__content">
-                                    <h3>Confirmation</h3>
-                                    <p>You receive confirmation that your data has been successfully deleted from our systems.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Important Notes -->
-                    <div class="content__section">
-                        <h2 class="content__title">Important Information</h2>
-                        <div class="notice-card notice-card--warning">
-                            <h3>Data Retention Exceptions</h3>
-                            <p>
-                                Some data may be retained for legal compliance, security purposes, or legitimate business interests 
-                                as permitted by applicable laws. This includes:
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-hash">#</span>data-deletion-policy
+                    </h2>
+                </div>
+                
+                <div class="policy__content">
+                    <div class="policy__text">
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">1. Data Deletion Overview</h3>
+                            <p class="about__paragraph">
+                                At Kenzn2, we respect your right to control your personal data. This Data Deletion Policy 
+                                explains how you can request the deletion of your data from our applications and services, 
+                                including Discord bots, Chrome extensions, and other AI/ML applications.
                             </p>
-                            <ul>
-                                <li>Legal obligations and regulatory requirements</li>
-                                <li>Security and fraud prevention</li>
-                                <li>Backup systems (automatically purged within 90 days)</li>
-                                <li>Anonymous usage analytics that cannot identify individuals</li>
+                        </div>
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">2. What Data May Be Collected</h3>
+                            <p class="about__paragraph">
+                                Depending on which services you use, we may collect different types of data:
+                            </p>
+                            <ul class="policy-list">
+                                <li><strong>Discord Bots:</strong> User IDs, server IDs, command usage statistics, user preferences and settings, message content for AI processing (temporary)</li>
+                                <li><strong>Chrome Extensions:</strong> Usage analytics and preferences, extension settings and configurations, performance metrics</li>
+                                <li><strong>AI/ML Applications:</strong> Input data for processing, generated outputs and results, usage patterns and analytics, user feedback and ratings</li>
                             </ul>
                         </div>
-                        
-                        <div class="notice-card notice-card--info">
-                            <h3>Service Impact</h3>
-                            <p>
-                                Deleting your data may impact your ability to use certain features or services. 
-                                Some consequences include:
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">3. Your Data Deletion Rights</h3>
+                            <p class="about__paragraph">
+                                You have the right to request deletion of your personal data under various privacy laws 
+                                including GDPR, CCPA, and other applicable regulations. We provide multiple ways to 
+                                exercise this right.
                             </p>
-                            <ul>
-                                <li>Loss of personalized settings and preferences</li>
-                                <li>Inability to recover previous interactions or history</li>
-                                <li>Reset of usage statistics and achievements</li>
-                                <li>Potential service limitations or restrictions</li>
+                        </div>
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">4. How to Request Data Deletion</h3>
+                            <p class="about__paragraph">
+                                To request data deletion, you can contact us through:
+                            </p>
+                            <ul class="policy-list">
+                                <li><strong>Email:</strong> Send a data deletion request to Antoan0105@gmail.com with your user information</li>
+                                <li><strong>Contact Form:</strong> Use the contact form below to submit your deletion request</li>
                             </ul>
                         </div>
-                    </div>
 
-                    <!-- Contact Information -->
-                    <div class="content__section">
-                        <h2 class="content__title">Contact Us</h2>
-                        <p class="content__text">
-                            If you have questions about data deletion or need assistance with the process, 
-                            please don't hesitate to contact us:
-                        </p>
-                        
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <strong>Email:</strong> 
-                                <a href="mailto:Antoan0105@gmail.com">Antoan0105@gmail.com</a>
-                            </div>
-                            <div class="contact-item">
-                                <strong>Discord:</strong> 
-                                <a href="https://discord.gg/CWU7pYMDtR" target="_blank">Join our server</a>
-                            </div>
-                            <div class="contact-item">
-                                <strong>Response Time:</strong> Within 72 hours
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">5. Data Deletion Process</h3>
+                            <p class="about__paragraph">
+                                Our data deletion process follows these steps:
+                            </p>
+                            <ul class="policy-list">
+                                <li><strong>Request Received:</strong> We acknowledge your deletion request within 48 hours</li>
+                                <li><strong>Identity Verification:</strong> We may require verification to ensure data protection</li>
+                                <li><strong>Data Location:</strong> We identify all locations where your data is stored</li>
+                                <li><strong>Deletion Execution:</strong> Data is permanently deleted from our systems within 30 days</li>
+                                <li><strong>Confirmation:</strong> You receive confirmation once deletion is complete</li>
+                            </ul>
+                        </div>
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">6. What Data Cannot Be Deleted</h3>
+                            <p class="about__paragraph">
+                                Some data may be retained for legal or technical reasons:
+                            </p>
+                            <ul class="policy-list">
+                                <li>Data required to be retained by law</li>
+                                <li>Anonymous or aggregated data that cannot identify you</li>
+                                <li>Data necessary for fraud prevention or security purposes</li>
+                                <li>Backup data that will be deleted in the normal course of operations</li>
+                            </ul>
+                        </div>
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">7. Timeline for Deletion</h3>
+                            <p class="about__paragraph">
+                                We aim to complete data deletion requests as quickly as possible:
+                            </p>
+                            <ul class="policy-list">
+                                <li><strong>Immediate:</strong> Active data from our primary systems</li>
+                                <li><strong>Within 7 days:</strong> Data from our application databases</li>
+                                <li><strong>Within 30 days:</strong> Data from backup systems and logs</li>
+                                <li><strong>Within 90 days:</strong> Archived data and disaster recovery systems</li>
+                            </ul>
+                        </div>
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">8. Third-Party Services</h3>
+                            <p class="about__paragraph">
+                                Some of our services use third-party platforms:
+                            </p>
+                            <ul class="policy-list">
+                                <li><strong>Discord:</strong> Bot data is stored on Discord's servers - you may need to request deletion directly from Discord</li>
+                                <li><strong>Chrome Web Store:</strong> Extension usage data may be subject to Google's policies</li>
+                                <li><strong>Cloud Providers:</strong> We use cloud services that may have their own retention policies</li>
+                            </ul>
+                        </div>
+
+                        <div class="policy-section">
+                            <h3 class="policy-section__title">9. Contact Information</h3>
+                            <p class="about__paragraph">
+                                For data deletion requests or questions about this policy:
+                            </p>
+                            <div class="contact-info">
+                                <p><strong>Email:</strong> Antoan0105@gmail.com</p>
+                                <p><strong>Developer:</strong> Nguyen Tuan Anh (Kenzn2)</p>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Last Updated -->
-                    <div class="content__section">
-                        <div class="last-updated">
-                            <p><strong>Last Updated:</strong> September 5, 2025</p>
-                            <p>This policy may be updated periodically. Check back for the latest version.</p>
+                        <div class="policy-footer">
+                            <p class="about__paragraph">
+                                <strong>Last Updated:</strong> September 5, 2025<br>
+                                This data deletion policy is effective immediately and applies to all Kenzn2 services and applications.
+                            </p>
                         </div>
                     </div>
-
                 </div>
             </div>
+            
+            <!-- Decorative dots -->
+            <div class="dots dots--about"></div>
+            
+            <!-- Decorative shapes -->
+            <div class="decorative-shape shape--overlapped shape--about-right"></div>
+        <!-- Contact Section -->
+        <section class="contacts" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-hash">#</span>contact-us
+                    </h2>
+                    <p class="section-subtitle">
+                        Need help with data deletion? Get in touch
+                    </p>
+                </div>
+                
+                <div class="contacts__content">
+                    <div class="contacts__info">
+                        <p class="contacts__description">
+                            If you have questions about data deletion or need assistance with the process, we're here to help. 
+                            Submit your data deletion request or ask any questions about our data handling practices.
+                        </p>
+                        
+                        <div class="contact-card">
+                            <h3 class="contact-card__title">Data Deletion Requests</h3>
+                            <div class="contact-methods">
+                                <a href="mailto:Antoan0105@gmail.com?subject=Data%20Deletion%20Request" class="contact-method">
+                                    <span class="contact-method__icon">📧</span>
+                                    <span>Antoan0105@gmail.com</span>
+                                </a>
+                                <a href="https://discord.gg/CWU7pYMDtR" class="contact-method" target="_blank">
+                                    <span class="contact-method__icon">💬</span>
+                                    <span>Discord Support</span>
+                                </a>
+                                <a href="https://github.com/kenzn2" class="contact-method" target="_blank">
+                                    <span class="contact-method__icon">🔗</span>
+                                    <span>GitHub Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div id="formStatus"></div>
+                        <div class="form-group">
+                            <input type="text" id="name" name="from_name" class="form-input" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="from_email" class="form-input" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="title" name="subject" class="form-input" placeholder="Subject (e.g., Data Deletion Request)" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Message about data deletion request..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary form-submit" id="submitBtn">Send Request</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Decorative dots -->
+            <div class="dots dots--contacts-left"></div>
+            <div class="dots dots--contacts-right"></div>
+            
+            <!-- Decorative shapes -->
+            <div class="decorative-shape shape--square-small shape--contacts-top"></div>
         </section>
     </main>
 
@@ -304,7 +339,7 @@
             </div>
             
             <div class="footer__bottom">
-                <p class="footer__copyright">© Copyright 2025. Design by Elias at <a href="https://www.figma.com/community/file/1164933568884615740" target="_blank" style="color: var(--color-primary); text-decoration: none;">Figma</a>, coded with MCP by Kenzn2</p>
+                <p class="footer__copyright">© Copyright 2025. Data Deletion Policy for Kenzn2 Projects</p>
             </div>
         </div>
     </footer>
